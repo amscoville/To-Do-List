@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    color: teal;
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+h1 {
+    color: navy;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h2 {
+    width: 700px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    font-size: 15px; 
+    border: .5px solid black;
+    border-radius: 4px;
+}
