@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>To Do List</title>
 </head>
+
 <body>
     <h1>List Boss</h1>
     <h2>Type your to do list items below, separated by a comma, and then press enter. A list will magically appear:</h2>
-    <input type="text" name="listitems" id="enter-list-items" oninput="addListItem()" placeholder="ex. clean kitchen, do homework, groom beard, etc."> 
+    <input type="text" name="listitems" id="input-box" placeholder="ex. clean kitchen, do homework, groom beard, etc.">
     <div id="list">
-        <!--list items display here-->
+        <ul class="display-list" id="list-items"></ul>
     </div>
-<script src = "main.js"></script>    
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
