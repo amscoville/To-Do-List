@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('#input-box').on('keyup', addItem);
+    $('#list-items').on('click', 'li', strikeThrough);
 });
 
 
@@ -10,10 +11,16 @@ function addItem(event){
         var listItems = text.split(',');
         for (var i = 0; i < listItems.length; i++) {
             var li = $('<li>' + listItems[i] + '</li>');
+            // $(li).addClass('item');
             $('.display-list').append(li);
             $('#input-box').val('');
         } 
     }
+}
+
+function strikeThrough(event){
+    event.preventDefault();
+    $('ul > li').toggleClass('item');
 }
 
 
